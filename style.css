@@ -38,11 +38,10 @@ body {
 }
 
 .container {
-  max-width: 940px;
+  max-width: 1140px;
   margin: 0 auto;
   padding-left: 40px;
   padding-right: 40px;
-  box-sizing: content-box;
 }
 
 .text {
@@ -88,8 +87,55 @@ body {
   border: 1px solid #828282;
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
+.wrapper .header__welcome {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  min-height: 575px;
+  background-image: url(img/denis_novik.jpg);
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  background-size: 100%;
+}
+.wrapper .header__welcome .denis_novik {
+  max-width: 123px;
+  font-weight: 700;
+  font-size: 47px;
+  line-height: 59px;
+}
+.wrapper .header__welcome .personal_info {
+  max-width: 156px;
+}
+.wrapper .header__welcome .vertical_text {
+  transform: rotate(-90deg);
+}
+.wrapper .header__welcome .lang {
+  display: inline;
+  font-size: 16px;
+  line-height: 20px;
+  color: #828282;
+}
+.wrapper .header__welcome .lang:hover {
+  color: #070707;
+}
 .wrapper .content {
   flex: 1 1 auto;
+}
+.wrapper .content .about_me {
+  min-height: 506px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 120px;
+  padding-bottom: 107px;
+  background: #F6F6F6;
+}
+.wrapper .content .about_heading {
+  margin-bottom: 18px;
+}
+.wrapper .content .about_text {
+  max-width: 486px;
+  text-align: center;
 }
 .wrapper .footer {
   height: 200px;
