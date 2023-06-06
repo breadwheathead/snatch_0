@@ -40,6 +40,9 @@ body {
 .container {
     max-width: 940px;
     margin: 0 auto;
+    padding-left: 40px;
+    padding-right: 40px;
+    box-sizing: content-box;
 }
 
 .text {
@@ -99,5 +102,8 @@ body {
     }
 
     // FOOTER
-    .footer {}
+    .footer {
+        height: 200px;
+        background-color: #777;
+    }
 }
