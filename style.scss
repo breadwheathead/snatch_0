@@ -44,6 +44,12 @@ body {
     padding-right: 40px;
 }
 
+.flex_column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .text {
     font-family: 'Gilroy-Medium', sans-serif;
     font-size: 18px;
@@ -58,6 +64,10 @@ body {
     line-height: 42px;
     text-align: center;
     color: #070707;
+}
+
+.gray_bg {
+    background: #F6F6F6;
 }
 
 .wrapper {
@@ -106,7 +116,7 @@ body {
 
 
             .denis_novik {
-                max-width: 123px;   
+                max-width: 123px;
                 font-weight: 700;
                 font-size: 47px;
                 line-height: 59px;
@@ -130,8 +140,6 @@ body {
             .lang:hover {
                 color: #070707;
             }
-
-
         }
     }
 
@@ -140,23 +148,76 @@ body {
         flex: 1 1 auto;
 
         .about_me {
-            min-height: 506px;
-            display: flex;
-            flex-direction: column;
             align-items: center;
             padding-top: 120px;
             padding-bottom: 107px;
-            background: #F6F6F6;
+
+            .about_heading {
+                margin-bottom: 18px;
+            }
+
+            .about_text {
+                max-width: 486px;
+                text-align: center;
+            }
         }
 
-        .about_heading {
-            margin-bottom: 18px;
+        .skills {
+            align-items: center;
+            padding-top: 91px;
+            padding-bottom: 110px;
+
+            .skills_heading {
+                margin-bottom: 69px;
+            }
+
+            .skills_list {
+                display: flex;
+                justify-content: space-between;
+                align-self: normal;
+                margin-top: 87px;
+
+                .skill {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    .skill_img {
+                        margin-bottom: 28px;
+                    }
+
+                    .skill_text {
+                        margin-bottom: 40px;
+                        font-size: 14px;
+                        line-height: 17px;
+                        text-align: center;
+                        color: #828282;
+                    }
+                }
+            }
         }
 
-        .about_text {
-            max-width: 486px;
-            text-align: center;
+        .portfolio {
+            padding-top: 112px;
+
+            .portfolio_heading {
+                margin-bottom: 47px;
+            }           
+
+            .project {
+                margin-bottom: 96px;
+
+                &__img {
+                    margin-bottom: 44px;
+                }
+
+                &__text {
+                    text-decoration-line: underline;
+                }
+
+            }
         }
+
     }
 
     // FOOTER
