@@ -54,6 +54,7 @@ body {
   font-family: "Gilroy-Medium", sans-serif;
   font-size: 18px;
   line-height: 22px;
+  text-align: center;
   color: #070707;
 }
 
@@ -64,6 +65,12 @@ body {
   line-height: 42px;
   text-align: center;
   color: #070707;
+}
+
+.gray_text {
+  font-size: 14px;
+  line-height: 17px;
+  color: #828282;
 }
 
 .gray_bg {
@@ -165,12 +172,8 @@ body {
 .wrapper .content .skills .skills_list .skill .skill_img {
   margin-bottom: 28px;
 }
-.wrapper .content .skills .skills_list .skill .skill_text {
-  margin-bottom: 40px;
-  font-size: 14px;
-  line-height: 17px;
-  text-align: center;
-  color: #828282;
+.wrapper .content .skills .skills_list .skill .stars {
+  margin-top: 40px;
 }
 .wrapper .content .portfolio {
   padding-top: 112px;
@@ -188,6 +191,33 @@ body {
   text-decoration-line: underline;
 }
 .wrapper .footer {
-  height: 200px;
-  background-color: red;
+  padding-top: 114px;
+  padding-bottom: 123px;
+}
+.wrapper .footer__heading {
+  margin-bottom: 20px;
+}
+.wrapper .footer__text {
+  max-width: 276px;
+  margin-bottom: 42px;
+}
+.wrapper .footer__button {
+  margin-bottom: 80px;
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+  background: #070707;
+}
+.wrapper .footer .contacts_list {
+  margin-bottom: 45px;
+  display: flex;
+  justify-content: space-between;
+}
+.wrapper .footer .contacts_list .contact {
+  margin: 0 30px;
+}
+.wrapper .footer__bottom_text {
+  max-width: 243px;
 }/*# sourceMappingURL=style.css.map */
