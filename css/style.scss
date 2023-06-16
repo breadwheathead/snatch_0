@@ -157,14 +157,15 @@ body {
         .about_me {
             align-items: center;
             padding-top: 120px;
-            padding-bottom: 107px;
+            padding-bottom: 85px;
 
             .about_heading {
                 margin-bottom: 18px;
             }
 
             .about_text {
-                max-width: 486px;
+                // max-width: 486px;
+                margin-bottom: 24px;
                 text-align: center;
             }
         }
@@ -195,6 +196,10 @@ body {
 
                     .stars {
                         margin-top: 40px;
+
+                        .fa-gray {
+                            color: #e5e5e5;
+                        }
                     }
                 }
             }
