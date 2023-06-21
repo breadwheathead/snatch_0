@@ -104,8 +104,9 @@ body {
   min-height: 575px;
   background-image: url(img/denis_novik.jpg);
   background-repeat: no-repeat;
+  background-position: center bottom;
   background-position-y: bottom;
-  background-size: 100%;
+  background-size: 1140px;
 }
 .wrapper .header__welcome .denis_novik {
   max-width: 123px;
@@ -117,7 +118,7 @@ body {
   max-width: 156px;
 }
 .wrapper .header__welcome .vertical_text {
-  transform: rotate(-90deg);
+  transform: rotate(-90deg) translateY(30px);
 }
 .wrapper .header__welcome .lang {
   display: inline;

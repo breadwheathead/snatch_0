@@ -111,8 +111,9 @@ body {
             min-height: 575px;
             background-image: url(img/denis_novik.jpg);
             background-repeat: no-repeat;
+            background-position: center bottom;
             background-position-y: bottom;
-            background-size: 100%;
+            background-size: 1140px;
 
 
             .denis_novik {
@@ -127,7 +128,7 @@ body {
             }
 
             .vertical_text {
-                transform: rotate(-90deg);
+                transform: rotate(-90deg) translateY(30px);
             }
 
             .lang {
@@ -202,7 +203,7 @@ body {
 
             .portfolio_heading {
                 margin-bottom: 47px;
-            }           
+            }
 
             .project {
                 margin-bottom: 96px;
