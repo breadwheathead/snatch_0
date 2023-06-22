@@ -54,6 +54,7 @@ body {
     font-family: 'Gilroy-Medium', sans-serif;
     font-size: 18px;
     line-height: 22px;
+    text-align: center;
     color: #070707;
 }
 
@@ -64,6 +65,12 @@ body {
     line-height: 42px;
     text-align: center;
     color: #070707;
+}
+
+.gray_text {
+    font-size: 14px;
+    line-height: 17px;
+    color: #828282;
 }
 
 .gray_bg {
@@ -151,14 +158,15 @@ body {
         .about_me {
             align-items: center;
             padding-top: 120px;
-            padding-bottom: 107px;
+            padding-bottom: 85px;
 
             .about_heading {
                 margin-bottom: 18px;
             }
 
             .about_text {
-                max-width: 486px;
+                // max-width: 486px;
+                margin-bottom: 24px;
                 text-align: center;
             }
         }
@@ -187,12 +195,12 @@ body {
                         margin-bottom: 28px;
                     }
 
-                    .skill_text {
-                        margin-bottom: 40px;
-                        font-size: 14px;
-                        line-height: 17px;
-                        text-align: center;
-                        color: #828282;
+                    .stars {
+                        margin-top: 40px;
+
+                        .fa-gray {
+                            color: #e5e5e5;
+                        }
                     }
                 }
             }
@@ -215,15 +223,46 @@ body {
                 &__text {
                     text-decoration-line: underline;
                 }
-
             }
         }
-
     }
 
     // FOOTER
     .footer {
-        height: 200px;
-        background-color: red;
+        padding-top: 114px;
+        padding-bottom: 123px;
+
+        &__heading {
+            margin-bottom: 20px;
+        }
+
+        &__text {
+            max-width: 276px;
+            margin-bottom: 42px;
+        }
+
+        &__button {
+            margin-bottom: 80px;
+            padding: 12px 28px;
+            border-radius: 30px;
+            font-size: 18px;
+            line-height: 22px;
+            color: #FFFFFF;
+            background: #070707;
+        }
+
+        .contacts_list {        
+            margin-bottom: 45px;
+            display: flex;
+            justify-content: space-between;
+
+            .contact {
+                margin: 0 30px;
+            }
+        }
+
+        &__bottom_text {
+            max-width: 243px;
+        }
     }
 }
