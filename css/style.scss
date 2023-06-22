@@ -40,8 +40,7 @@ body {
 .container {
     max-width: 960px;
     margin: 0 auto;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding: 0 40px;
     box-sizing: content-box;
 }
 
@@ -219,8 +218,12 @@ body {
             .project {
                 margin-bottom: 96px;
 
-                &__img {
+                &__link {
                     margin-bottom: 44px;
+
+                    &__img {
+                        width: 100%;
+                    }
                 }
 
                 &__text {
@@ -267,5 +270,19 @@ body {
         &__bottom_text {
             max-width: 243px;
         }
+    }
+}
+
+@media (max-width: 667px) {
+    .container {
+        padding: 0 29px;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .header__line {
+        display: none;
     }
 }

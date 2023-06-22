@@ -40,8 +40,7 @@ body {
 .container {
   max-width: 960px;
   margin: 0 auto;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding: 0 40px;
   box-sizing: content-box;
 }
 
@@ -191,8 +190,11 @@ body {
 .wrapper .content .portfolio .project {
   margin-bottom: 96px;
 }
-.wrapper .content .portfolio .project__img {
+.wrapper .content .portfolio .project__link {
   margin-bottom: 44px;
+}
+.wrapper .content .portfolio .project__link__img {
+  width: 100%;
 }
 .wrapper .content .portfolio .project__text {
   text-decoration-line: underline;
@@ -227,4 +229,16 @@ body {
 }
 .wrapper .footer__bottom_text {
   max-width: 243px;
+}
+
+@media (max-width: 667px) {
+  .container {
+    padding: 0 29px;
+  }
+  .nav {
+    display: none;
+  }
+  .header__line {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
