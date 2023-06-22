@@ -38,10 +38,11 @@ body {
 }
 
 .container {
-    max-width: 1140px;
+    max-width: 960px;
     margin: 0 auto;
     padding-left: 40px;
     padding-right: 40px;
+    box-sizing: content-box;
 }
 
 .flex_column {
@@ -112,41 +113,43 @@ body {
         }
 
         &__welcome {
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
             min-height: 575px;
-            background-image: url(img/denis_novik.jpg);
+            background-image: url(../img/denis_novik.jpg);
             background-repeat: no-repeat;
             background-position: center bottom;
             background-position-y: bottom;
-            background-size: 1140px;
+            background-size: 960px;
 
+            .denis {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
 
-            .denis_novik {
-                max-width: 123px;
-                font-weight: 700;
-                font-size: 47px;
-                line-height: 59px;
-            }
+                .denis_novik {
+                    max-width: 123px;
+                    font-weight: 700;
+                    font-size: 47px;
+                    line-height: 59px;
+                }
 
-            .personal_info {
-                max-width: 156px;
-            }
+                .personal_info {
+                    max-width: 156px;
+                }
 
-            .vertical_text {
-                transform: rotate(-90deg) translateY(30px);
-            }
+                .vertical_text {
+                    transform: rotate(-90deg) translateY(30px);
+                }
 
-            .lang {
-                display: inline;
-                font-size: 16px;
-                line-height: 20px;
-                color: #828282;
-            }
+                .lang {
+                    display: inline;
+                    font-size: 16px;
+                    line-height: 20px;
+                    color: #828282;
+                }
 
-            .lang:hover {
-                color: #070707;
+                .lang:hover {
+                    color: #070707;
+                }
             }
         }
     }
@@ -251,7 +254,7 @@ body {
             background: #070707;
         }
 
-        .contacts_list {        
+        .contacts_list {
             margin-bottom: 45px;
             display: flex;
             justify-content: space-between;

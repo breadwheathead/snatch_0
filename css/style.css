@@ -38,10 +38,11 @@ body {
 }
 
 .container {
-  max-width: 1140px;
+  max-width: 960px;
   margin: 0 auto;
   padding-left: 40px;
   padding-right: 40px;
+  box-sizing: content-box;
 }
 
 .flex_column {
@@ -105,35 +106,37 @@ body {
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
 .wrapper .header__welcome {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
   min-height: 575px;
-  background-image: url(img/denis_novik.jpg);
+  background-image: url(../img/denis_novik.jpg);
   background-repeat: no-repeat;
   background-position: center bottom;
   background-position-y: bottom;
-  background-size: 1140px;
+  background-size: 960px;
 }
-.wrapper .header__welcome .denis_novik {
+.wrapper .header__welcome .denis {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.wrapper .header__welcome .denis .denis_novik {
   max-width: 123px;
   font-weight: 700;
   font-size: 47px;
   line-height: 59px;
 }
-.wrapper .header__welcome .personal_info {
+.wrapper .header__welcome .denis .personal_info {
   max-width: 156px;
 }
-.wrapper .header__welcome .vertical_text {
+.wrapper .header__welcome .denis .vertical_text {
   transform: rotate(-90deg) translateY(30px);
 }
-.wrapper .header__welcome .lang {
+.wrapper .header__welcome .denis .lang {
   display: inline;
   font-size: 16px;
   line-height: 20px;
   color: #828282;
 }
-.wrapper .header__welcome .lang:hover {
+.wrapper .header__welcome .denis .lang:hover {
   color: #070707;
 }
 .wrapper .content {
