@@ -112,44 +112,46 @@ body {
         }
 
         &__welcome {
-            min-height: 575px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+
+            .person {
+                max-width: 123px;
+                font-weight: 700;
+                font-size: 47px;
+                line-height: 59px;
+            }
+
+            .personal_info {
+                max-width: 156px;
+            }
+
+            .vertical_text {
+                transform: rotate(-90deg) translateY(30px);
+            }
+
+            .lang {
+                display: inline;
+                font-size: 16px;
+                line-height: 20px;
+                color: #828282;
+            }
+
+            .lang:hover {
+                color: #070707;
+            }
+        }
+
+        &__photo {
+            height: 392px;
+
             background-image: url(../img/denis_novik.jpg);
             background-repeat: no-repeat;
             background-position: center bottom;
             background-position-y: bottom;
             background-size: 960px;
-
-            .denis {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-
-                .denis_novik {
-                    max-width: 123px;
-                    font-weight: 700;
-                    font-size: 47px;
-                    line-height: 59px;
-                }
-
-                .personal_info {
-                    max-width: 156px;
-                }
-
-                .vertical_text {
-                    transform: rotate(-90deg) translateY(30px);
-                }
-
-                .lang {
-                    display: inline;
-                    font-size: 16px;
-                    line-height: 20px;
-                    color: #828282;
-                }
-
-                .lang:hover {
-                    color: #070707;
-                }
-            }
         }
     }
 
@@ -273,6 +275,8 @@ body {
     }
 }
 
+// MEDIA PHONE 667px
+
 @media (max-width: 667px) {
     .container {
         padding: 0 29px;
@@ -282,7 +286,37 @@ body {
         display: none;
     }
 
-    .header__line {
-        display: none;
+    .header {
+        padding-top: 65px;
+        margin-bottom: 83px;
+
+        &__line {
+            display: none;
+        }
+
+        &__welcome {
+            justify-content: start;
+            flex-direction: column;
+            align-items: start;
+            margin-bottom: 36px;
+
+            .person {
+                margin-bottom: 23px;
+            }
+
+
+            .personal_info {
+                text-align: left;
+            }
+
+            .vertical_text {
+                display: none;
+            }
+        }
+
+        &__photo {
+            background-image: url(../img/denis_novik_mini.jpg);
+            background-size: contain;
+        }
     }
 }

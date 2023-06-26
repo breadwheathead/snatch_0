@@ -105,38 +105,39 @@ body {
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
 .wrapper .header__welcome {
-  min-height: 575px;
-  background-image: url(../img/denis_novik.jpg);
-  background-repeat: no-repeat;
-  background-position: center bottom;
-  background-position-y: bottom;
-  background-size: 960px;
-}
-.wrapper .header__welcome .denis {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 30px;
 }
-.wrapper .header__welcome .denis .denis_novik {
+.wrapper .header__welcome .person {
   max-width: 123px;
   font-weight: 700;
   font-size: 47px;
   line-height: 59px;
 }
-.wrapper .header__welcome .denis .personal_info {
+.wrapper .header__welcome .personal_info {
   max-width: 156px;
 }
-.wrapper .header__welcome .denis .vertical_text {
+.wrapper .header__welcome .vertical_text {
   transform: rotate(-90deg) translateY(30px);
 }
-.wrapper .header__welcome .denis .lang {
+.wrapper .header__welcome .lang {
   display: inline;
   font-size: 16px;
   line-height: 20px;
   color: #828282;
 }
-.wrapper .header__welcome .denis .lang:hover {
+.wrapper .header__welcome .lang:hover {
   color: #070707;
+}
+.wrapper .header__photo {
+  height: 392px;
+  background-image: url(../img/denis_novik.jpg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-position-y: bottom;
+  background-size: 960px;
 }
 .wrapper .content {
   flex: 1 1 auto;
@@ -238,7 +239,30 @@ body {
   .nav {
     display: none;
   }
+  .header {
+    padding-top: 65px;
+    margin-bottom: 83px;
+  }
   .header__line {
     display: none;
+  }
+  .header__welcome {
+    justify-content: start;
+    flex-direction: column;
+    align-items: start;
+    margin-bottom: 36px;
+  }
+  .header__welcome .person {
+    margin-bottom: 23px;
+  }
+  .header__welcome .personal_info {
+    text-align: left;
+  }
+  .header__welcome .vertical_text {
+    display: none;
+  }
+  .header__photo {
+    background-image: url(../img/denis_novik_mini.jpg);
+    background-size: contain;
   }
 }/*# sourceMappingURL=style.css.map */
