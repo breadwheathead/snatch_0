@@ -82,196 +82,196 @@ body {
 
     display: flex;
     flex-direction: column;
+}
 
-    // HEADER
-    .header {
-        margin-bottom: 104px;
-        padding-top: 32px;
+// HEADER
+.header {
+    margin-bottom: 104px;
+    padding-top: 32px;
 
-        .nav {
-            display: flex;
-            justify-content: space-between;
+    .nav {
+        display: flex;
+        justify-content: space-between;
 
-            &__link {
-                font-size: 18px;
-                line-height: 22px;
-                color: #828282;
-            }
-
-            &__link:hover {
-                color: #070707;
-            }
+        &__link {
+            font-size: 18px;
+            line-height: 22px;
+            color: #828282;
         }
 
-        &__line {
-            margin-top: 32px;
-            margin-bottom: 40px;
-
-            border: 1px solid #828282;
-            transform: matrix(1, 0, 0, 1, 0, 0);
-        }
-
-        &__welcome {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 30px;
-
-            .person {
-                max-width: 123px;
-                font-weight: 700;
-                font-size: 47px;
-                line-height: 59px;
-            }
-
-            .personal_info {
-                max-width: 156px;
-            }
-
-            .vertical_text {
-                transform: rotate(-90deg) translateY(30px);
-            }
-
-            .lang {
-                display: inline;
-                font-size: 16px;
-                line-height: 20px;
-                color: #828282;
-            }
-
-            .lang:hover {
-                color: #070707;
-            }
-        }
-
-        &__photo {
-            height: 392px;
-
-            background-image: url(../img/denis_novik.jpg);
-            background-repeat: no-repeat;
-            background-position: center bottom;
-            background-position-y: bottom;
-            background-size: 960px;
+        &__link:hover {
+            color: #070707;
         }
     }
 
-    // CONTENT
-    .content {
-        flex: 1 1 auto;
+    &__line {
+        margin-top: 32px;
+        margin-bottom: 40px;
 
-        .about_me {
-            align-items: center;
-            padding-top: 120px;
-            padding-bottom: 85px;
+        border: 1px solid #828282;
+        transform: matrix(1, 0, 0, 1, 0, 0);
+    }
 
-            .about_heading {
-                margin-bottom: 18px;
-            }
+    &__welcome {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
 
-            .about_text {
-                // max-width: 486px;
-                margin-bottom: 24px;
-                text-align: center;
-            }
+        .person {
+            max-width: 123px;
+            font-weight: 700;
+            font-size: 47px;
+            line-height: 59px;
         }
 
-        .skills {
-            align-items: center;
-            padding-top: 91px;
-            padding-bottom: 110px;
-
-            .skills_heading {
-                margin-bottom: 69px;
-            }
-
-            .skills_list {
-                display: flex;
-                justify-content: space-between;
-                align-self: normal;
-                margin-top: 87px;
-
-                .skill {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-
-                    .skill_img {
-                        margin-bottom: 28px;
-                    }
-
-                    .stars {
-                        margin-top: 40px;
-
-                        .fa-gray {
-                            color: #e5e5e5;
-                        }
-                    }
-                }
-            }
+        .personal_info {
+            max-width: 156px;
         }
 
-        .portfolio {
-            padding-top: 112px;
+        .vertical_text {
+            transform: rotate(-90deg) translateY(30px);
+        }
 
-            .portfolio_heading {
-                margin-bottom: 47px;
-            }
+        .lang {
+            display: inline;
+            font-size: 16px;
+            line-height: 20px;
+            color: #828282;
+        }
 
-            .project {
-                margin-bottom: 96px;
-
-                &__link {
-                    margin-bottom: 44px;
-
-                    &__img {
-                        width: 100%;
-                    }
-                }
-
-                &__text {
-                    text-decoration-line: underline;
-                }
-            }
+        .lang:hover {
+            color: #070707;
         }
     }
 
-    // FOOTER
-    .footer {
-        padding-top: 114px;
-        padding-bottom: 123px;
+    &__photo {
+        height: 392px;
 
-        &__heading {
-            margin-bottom: 20px;
+        background-image: url(../img/denis_novik.jpg);
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        background-position-y: bottom;
+        background-size: 960px;
+    }
+}
+
+// CONTENT
+.content {
+    flex: 1 1 auto;
+}
+
+.about_me {
+    align-items: center;
+    padding-top: 120px;
+    padding-bottom: 85px;
+
+    .about_heading {
+        margin-bottom: 18px;
+    }
+
+    .about_text {
+        // max-width: 486px;
+        margin-bottom: 24px;
+        text-align: center;
+    }
+}
+
+.skills {
+    align-items: center;
+    padding-top: 91px;
+    padding-bottom: 110px;
+
+    &__heading {
+        margin-bottom: 69px;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        align-self: normal;
+        margin-top: 87px;
+    }
+
+    .skill {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .skill_img {
+            margin-bottom: 28px;
+        }
+
+        .stars {
+            margin-top: 40px;
+
+            .fa-gray {
+                color: #e5e5e5;
+            }
+        }
+    }
+}
+
+.portfolio {
+    padding-top: 112px;
+
+    .portfolio_heading {
+        margin-bottom: 47px;
+    }
+
+    .project {
+        margin-bottom: 96px;
+
+        &__link {
+            margin-bottom: 44px;
+
+            &__img {
+                width: 100%;
+            }
         }
 
         &__text {
-            max-width: 276px;
-            margin-bottom: 42px;
+            text-decoration-line: underline;
         }
+    }
+}
 
-        &__button {
-            margin-bottom: 80px;
-            padding: 12px 28px;
-            border-radius: 30px;
-            font-size: 18px;
-            line-height: 22px;
-            color: #FFFFFF;
-            background: #070707;
+// FOOTER
+.footer {
+    padding-top: 114px;
+    padding-bottom: 123px;
+
+    &__heading {
+        margin-bottom: 20px;
+    }
+
+    &__text {
+        max-width: 276px;
+        margin-bottom: 42px;
+    }
+
+    &__button {
+        margin-bottom: 80px;
+        padding: 12px 28px;
+        border-radius: 30px;
+        font-size: 18px;
+        line-height: 22px;
+        color: #FFFFFF;
+        background: #070707;
+    }
+
+    .contacts_list {
+        margin-bottom: 45px;
+        display: flex;
+        justify-content: space-between;
+
+        .contact {
+            margin: 0 30px;
         }
+    }
 
-        .contacts_list {
-            margin-bottom: 45px;
-            display: flex;
-            justify-content: space-between;
-
-            .contact {
-                margin: 0 30px;
-            }
-        }
-
-        &__bottom_text {
-            max-width: 243px;
-        }
+    &__bottom_text {
+        max-width: 243px;
     }
 }
 
@@ -282,13 +282,14 @@ body {
         padding: 0 29px;
     }
 
-    .nav {
-        display: none;
-    }
-
+    // HEADER
     .header {
         padding-top: 65px;
         margin-bottom: 83px;
+
+        .nav {
+            display: none;
+        }
 
         &__line {
             display: none;
@@ -316,7 +317,30 @@ body {
 
         &__photo {
             background-image: url(../img/denis_novik_mini.jpg);
-            background-size: contain;
+            background-size: 100%;
+            background-position: center top;
         }
+    }
+
+    // CONTENT
+    .about_me {
+        padding-top: 91px;
+        padding-bottom: 76px;
+    }
+
+    .skills {
+        padding-top: 83px;
+        padding-bottom: 17px;
+
+        &__list {
+            justify-content: start;
+            flex-direction: column;
+            align-self: center;
+            margin-top: 70px;
+        }
+    }
+
+    .skill {
+        margin-bottom: 81px;
     }
 }

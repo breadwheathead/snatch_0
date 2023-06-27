@@ -82,56 +82,57 @@ body {
   display: flex;
   flex-direction: column;
 }
-.wrapper .header {
+
+.header {
   margin-bottom: 104px;
   padding-top: 32px;
 }
-.wrapper .header .nav {
+.header .nav {
   display: flex;
   justify-content: space-between;
 }
-.wrapper .header .nav__link {
+.header .nav__link {
   font-size: 18px;
   line-height: 22px;
   color: #828282;
 }
-.wrapper .header .nav__link:hover {
+.header .nav__link:hover {
   color: #070707;
 }
-.wrapper .header__line {
+.header__line {
   margin-top: 32px;
   margin-bottom: 40px;
   border: 1px solid #828282;
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
-.wrapper .header__welcome {
+.header__welcome {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 30px;
 }
-.wrapper .header__welcome .person {
+.header__welcome .person {
   max-width: 123px;
   font-weight: 700;
   font-size: 47px;
   line-height: 59px;
 }
-.wrapper .header__welcome .personal_info {
+.header__welcome .personal_info {
   max-width: 156px;
 }
-.wrapper .header__welcome .vertical_text {
+.header__welcome .vertical_text {
   transform: rotate(-90deg) translateY(30px);
 }
-.wrapper .header__welcome .lang {
+.header__welcome .lang {
   display: inline;
   font-size: 16px;
   line-height: 20px;
   color: #828282;
 }
-.wrapper .header__welcome .lang:hover {
+.header__welcome .lang:hover {
   color: #070707;
 }
-.wrapper .header__photo {
+.header__photo {
   height: 392px;
   background-image: url(../img/denis_novik.jpg);
   background-repeat: no-repeat;
@@ -139,79 +140,84 @@ body {
   background-position-y: bottom;
   background-size: 960px;
 }
-.wrapper .content {
+
+.content {
   flex: 1 1 auto;
 }
-.wrapper .content .about_me {
+
+.about_me {
   align-items: center;
   padding-top: 120px;
   padding-bottom: 85px;
 }
-.wrapper .content .about_me .about_heading {
+.about_me .about_heading {
   margin-bottom: 18px;
 }
-.wrapper .content .about_me .about_text {
+.about_me .about_text {
   margin-bottom: 24px;
   text-align: center;
 }
-.wrapper .content .skills {
+
+.skills {
   align-items: center;
   padding-top: 91px;
   padding-bottom: 110px;
 }
-.wrapper .content .skills .skills_heading {
+.skills__heading {
   margin-bottom: 69px;
 }
-.wrapper .content .skills .skills_list {
+.skills__list {
   display: flex;
   justify-content: space-between;
   align-self: normal;
   margin-top: 87px;
 }
-.wrapper .content .skills .skills_list .skill {
+.skills .skill {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.wrapper .content .skills .skills_list .skill .skill_img {
+.skills .skill .skill_img {
   margin-bottom: 28px;
 }
-.wrapper .content .skills .skills_list .skill .stars {
+.skills .skill .stars {
   margin-top: 40px;
 }
-.wrapper .content .skills .skills_list .skill .stars .fa-gray {
+.skills .skill .stars .fa-gray {
   color: #e5e5e5;
 }
-.wrapper .content .portfolio {
+
+.portfolio {
   padding-top: 112px;
 }
-.wrapper .content .portfolio .portfolio_heading {
+.portfolio .portfolio_heading {
   margin-bottom: 47px;
 }
-.wrapper .content .portfolio .project {
+.portfolio .project {
   margin-bottom: 96px;
 }
-.wrapper .content .portfolio .project__link {
+.portfolio .project__link {
   margin-bottom: 44px;
 }
-.wrapper .content .portfolio .project__link__img {
+.portfolio .project__link__img {
   width: 100%;
 }
-.wrapper .content .portfolio .project__text {
+.portfolio .project__text {
   text-decoration-line: underline;
 }
-.wrapper .footer {
+
+.footer {
   padding-top: 114px;
   padding-bottom: 123px;
 }
-.wrapper .footer__heading {
+.footer__heading {
   margin-bottom: 20px;
 }
-.wrapper .footer__text {
+.footer__text {
   max-width: 276px;
   margin-bottom: 42px;
 }
-.wrapper .footer__button {
+.footer__button {
   margin-bottom: 80px;
   padding: 12px 28px;
   border-radius: 30px;
@@ -220,15 +226,15 @@ body {
   color: #FFFFFF;
   background: #070707;
 }
-.wrapper .footer .contacts_list {
+.footer .contacts_list {
   margin-bottom: 45px;
   display: flex;
   justify-content: space-between;
 }
-.wrapper .footer .contacts_list .contact {
+.footer .contacts_list .contact {
   margin: 0 30px;
 }
-.wrapper .footer__bottom_text {
+.footer__bottom_text {
   max-width: 243px;
 }
 
@@ -236,12 +242,12 @@ body {
   .container {
     padding: 0 29px;
   }
-  .nav {
-    display: none;
-  }
   .header {
     padding-top: 65px;
     margin-bottom: 83px;
+  }
+  .header .nav {
+    display: none;
   }
   .header__line {
     display: none;
@@ -263,6 +269,24 @@ body {
   }
   .header__photo {
     background-image: url(../img/denis_novik_mini.jpg);
-    background-size: contain;
+    background-size: 100%;
+    background-position: center top;
+  }
+  .about_me {
+    padding-top: 91px;
+    padding-bottom: 76px;
+  }
+  .skills {
+    padding-top: 83px;
+    padding-bottom: 17px;
+  }
+  .skills__list {
+    justify-content: start;
+    flex-direction: column;
+    align-self: center;
+    margin-top: 70px;
+  }
+  .skill {
+    margin-bottom: 81px;
   }
 }/*# sourceMappingURL=style.css.map */
