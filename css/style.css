@@ -172,37 +172,39 @@ body {
   align-self: normal;
   margin-top: 87px;
 }
-.skills .skill {
+
+.skill {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.skills .skill .skill_img {
+.skill__img {
   margin-bottom: 28px;
 }
-.skills .skill .stars {
+.skill__stars {
   margin-top: 40px;
 }
-.skills .skill .stars .fa-gray {
+.skill__stars .fa-gray {
   color: #e5e5e5;
 }
 
 .portfolio {
   padding-top: 112px;
 }
-.portfolio .portfolio_heading {
+.portfolio__heading {
   margin-bottom: 47px;
 }
-.portfolio .project {
+
+.project {
   margin-bottom: 96px;
 }
-.portfolio .project__link {
-  margin-bottom: 44px;
+.project__link {
+  margin-bottom: 45px;
 }
-.portfolio .project__link__img {
+.project__link__img {
   width: 100%;
 }
-.portfolio .project__text {
+.project__text {
   text-decoration-line: underline;
 }
 
@@ -216,9 +218,6 @@ body {
 .footer__text {
   max-width: 276px;
   margin-bottom: 42px;
-}
-.footer__button {
-  margin-bottom: 80px;
   padding: 12px 28px;
   border-radius: 30px;
   font-size: 18px;
@@ -288,5 +287,24 @@ body {
   }
   .skill {
     margin-bottom: 81px;
+  }
+  .portfolio {
+    padding-top: 82px;
+  }
+  .portfolio__heading {
+    margin-bottom: 65px;
+  }
+  .project {
+    margin-bottom: 80px;
+  }
+  .project__link {
+    margin-bottom: 35px;
+  }
+  .footer {
+    padding-top: 82px;
+    padding-bottom: 90px;
+  }
+  .footer__bottom_text {
+    size: 18px;
   }
 }/*# sourceMappingURL=style.css.map */
