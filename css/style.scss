@@ -1,3 +1,4 @@
+// NULLING STYLES
 *,
 *::before,
 *::after {
@@ -37,6 +38,7 @@ body {
     background: #FFFFFF;
 }
 
+// 
 .container {
     max-width: 960px;
     margin: 0 auto;
@@ -170,8 +172,7 @@ body {
         margin-bottom: 18px;
     }
 
-    .about_text {
-        // max-width: 486px;
+    .about_text {        
         margin-bottom: 24px;
         text-align: center;
     }
@@ -245,24 +246,27 @@ body {
         margin-bottom: 20px;
     }
 
-    &__text {
-        max-width: 276px;
-        margin-bottom: 42px;
+    &__button {
+        width: 276px;
+        margin-top: 30px;
+        margin-bottom: 91px;
         padding: 12px 28px;
         border-radius: 30px;
         font-size: 18px;
         line-height: 22px;
         color: #FFFFFF;
         background: #070707;
+
     }
 
     .contacts_list {
+        width: 342px;
         margin-bottom: 45px;
         display: flex;
         justify-content: space-between;
 
         .contact {
-            margin: 0 30px;
+            // margin: 0 30px;
         }
     }
 
@@ -361,8 +365,17 @@ body {
         padding-top: 82px;
         padding-bottom: 90px;
 
+        &__button {
+            width: 100%;
+            margin-bottom: 60px;
+        }
+
         &__bottom_text {
-            size: 18px;
+            font-size: 18px;
+        }
+
+        .contacts_list {
+            width: 100%;
         }
     }
 }

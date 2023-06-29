@@ -215,9 +215,10 @@ body {
 .footer__heading {
   margin-bottom: 20px;
 }
-.footer__text {
-  max-width: 276px;
-  margin-bottom: 42px;
+.footer__button {
+  width: 276px;
+  margin-top: 30px;
+  margin-bottom: 91px;
   padding: 12px 28px;
   border-radius: 30px;
   font-size: 18px;
@@ -226,12 +227,10 @@ body {
   background: #070707;
 }
 .footer .contacts_list {
+  width: 342px;
   margin-bottom: 45px;
   display: flex;
   justify-content: space-between;
-}
-.footer .contacts_list .contact {
-  margin: 0 30px;
 }
 .footer__bottom_text {
   max-width: 243px;
@@ -304,7 +303,14 @@ body {
     padding-top: 82px;
     padding-bottom: 90px;
   }
+  .footer__button {
+    width: 100%;
+    margin-bottom: 60px;
+  }
   .footer__bottom_text {
-    size: 18px;
+    font-size: 18px;
+  }
+  .footer .contacts_list {
+    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */
