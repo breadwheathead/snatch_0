@@ -105,32 +105,41 @@ body {
   border: 1px solid #828282;
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
-.header__welcome {
+.header__welcome__person {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 30px;
 }
-.header__welcome .person {
+.header__welcome__person .person {
   max-width: 123px;
   font-weight: 700;
   font-size: 47px;
   line-height: 59px;
 }
-.header__welcome .personal_info {
+.header__welcome__person .personal_info {
   max-width: 156px;
 }
-.header__welcome .vertical_text {
+.header__welcome__person .vertical_text {
   transform: rotate(-90deg) translateY(30px);
 }
-.header__welcome .lang {
+.header__welcome__person .lang {
   display: inline;
   font-size: 16px;
   line-height: 20px;
   color: #828282;
 }
-.header__welcome .lang:hover {
+.header__welcome__person .lang:hover {
   color: #070707;
+}
+.header .burger {
+  display: none;
+  width: 33px;
+  height: 19.19px;
+}
+.header .burger__line {
+  height: 3.84px;
+  background-color: #000000;
 }
 .header__photo {
   height: 392px;
@@ -245,25 +254,41 @@ body {
     margin-bottom: 83px;
   }
   .header .nav {
-    display: none;
+    flex-direction: column;
+  }
+  .header .nav__item {
+    margin-bottom: 68px;
+  }
+  .header .nav__link {
+    font-size: 34px;
+    line-height: 42px;
   }
   .header__line {
     display: none;
   }
   .header__welcome {
+    display: flex;
+    justify-content: space-between;
+  }
+  .header__welcome__person {
     justify-content: start;
     flex-direction: column;
     align-items: start;
     margin-bottom: 36px;
   }
-  .header__welcome .person {
+  .header__welcome__person .person {
     margin-bottom: 23px;
   }
-  .header__welcome .personal_info {
+  .header__welcome__person .personal_info {
     text-align: left;
   }
-  .header__welcome .vertical_text {
+  .header__welcome__person .vertical_text {
     display: none;
+  }
+  .header .burger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
   .header__photo {
     background-image: url(../img/denis_novik_mini.jpg);
