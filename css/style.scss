@@ -87,14 +87,11 @@ body {
 }
 
 // HEADER
-.header {
-    margin-bottom: 104px;
-    padding-top: 32px;
-    // position: relative;
-
-    .nav {
+.nav {
+    &__menu {
         display: flex;
         justify-content: space-between;
+        flex-grow: 1;
         // position: absolute;
 
         &__link {
@@ -107,6 +104,22 @@ body {
             color: #070707;
         }
     }
+
+    &__right_place {
+        display: none;
+    }
+}
+
+.close {
+    width: 20px;
+    height: 20px;
+    background-color: yellow;
+}
+
+.header {
+    margin-bottom: 104px;
+    padding-top: 32px;
+    // position: relative;    
 
     &__line {
         margin-top: 32px;
@@ -124,32 +137,32 @@ body {
             align-items: center;
             margin-bottom: 30px;
 
-            .person {
+            &__name {
                 max-width: 123px;
                 font-weight: 700;
                 font-size: 47px;
                 line-height: 59px;
             }
 
-            .personal_info {
+            &__info {
                 max-width: 156px;
             }
-
-            .vertical_text {
-                transform: rotate(-90deg) translateY(30px);
-            }
-
-            .lang {
-                display: inline;
-                font-size: 16px;
-                line-height: 20px;
-                color: #828282;
-            }
-
-            .lang:hover {
-                color: #070707;
-            }
         }
+    }
+
+    .vertical_text {
+        transform: rotate(-90deg) translateY(30px);
+    }
+
+    .lang {
+        display: inline;
+        font-size: 16px;
+        line-height: 20px;
+        color: #828282;
+    }
+
+    .lang:hover {
+        color: #070707;
     }
 
     .burger {
@@ -179,16 +192,16 @@ body {
     flex: 1 1 auto;
 }
 
-.about_me {
+.about {
     align-items: center;
     padding-top: 120px;
     padding-bottom: 85px;
 
-    .about_heading {
+    &__heading {
         margin-bottom: 18px;
     }
 
-    .about_text {
+    &__text {
         margin-bottom: 24px;
         text-align: center;
     }
@@ -222,11 +235,11 @@ body {
 
     &__stars {
         margin-top: 40px;
-
-        .fa-gray {
-            color: #e5e5e5;
-        }
     }
+}
+
+.fa-gray {
+    color: #e5e5e5;
 }
 
 .portfolio {
@@ -275,20 +288,16 @@ body {
 
     }
 
-    .contacts_list {
-        width: 342px;
-        margin-bottom: 45px;
-        display: flex;
-        justify-content: space-between;
-
-        .contact {
-            // margin: 0 30px;
-        }
-    }
-
     &__bottom_text {
         max-width: 243px;
     }
+}
+
+.contacts_list {
+    width: 342px;
+    margin-bottom: 45px;
+    display: flex;
+    justify-content: space-between;
 }
 
 // MEDIA PHONE 667px
@@ -299,11 +308,10 @@ body {
     }
 
     // HEADER
-    .header {
-        padding-top: 65px;
-        margin-bottom: 83px;
+    .nav {
+        display: flex;
 
-        .nav {
+        &__menu {
             flex-direction: column;
 
             &__item {
@@ -315,6 +323,17 @@ body {
                 line-height: 42px;
             }
         }
+
+        &__right_place {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    }
+
+    .header {
+        padding-top: 65px;
+        margin-bottom: 83px;
 
         &__line {
             display: none;
@@ -330,20 +349,19 @@ body {
                 align-items: start;
                 margin-bottom: 36px;
 
-                .person {
+                &__name {
                     margin-bottom: 23px;
                 }
 
 
-                .personal_info {
+                &__info {
                     text-align: left;
                 }
-
-                .vertical_text {
-                    display: none;
-                }
             }
+        }
 
+        .vertical_text {
+            display: none;
         }
 
         .burger {
@@ -360,7 +378,7 @@ body {
     }
 
     // CONTENT
-    .about_me {
+    .about {
         padding-top: 91px;
         padding-bottom: 76px;
     }
@@ -410,9 +428,9 @@ body {
         &__bottom_text {
             font-size: 18px;
         }
+    }
 
-        .contacts_list {
-            width: 100%;
-        }
+    .contacts_list {
+        width: 100%;
     }
 }
