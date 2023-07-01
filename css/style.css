@@ -83,29 +83,6 @@ body {
   flex-direction: column;
 }
 
-.nav__menu {
-  display: flex;
-  justify-content: space-between;
-  flex-grow: 1;
-}
-.nav__menu__link {
-  font-size: 18px;
-  line-height: 22px;
-  color: #828282;
-}
-.nav__menu__link:hover {
-  color: #070707;
-}
-.nav__right_place {
-  display: none;
-}
-
-.close {
-  width: 20px;
-  height: 20px;
-  background-color: yellow;
-}
-
 .header {
   margin-bottom: 104px;
   padding-top: 32px;
@@ -131,27 +108,6 @@ body {
 .header__welcome__person__info {
   max-width: 156px;
 }
-.header .vertical_text {
-  transform: rotate(-90deg) translateY(30px);
-}
-.header .lang {
-  display: inline;
-  font-size: 16px;
-  line-height: 20px;
-  color: #828282;
-}
-.header .lang:hover {
-  color: #070707;
-}
-.header .burger {
-  display: none;
-  width: 33px;
-  height: 19.19px;
-}
-.header .burger__line {
-  height: 3.84px;
-  background-color: #000000;
-}
 .header__photo {
   height: 392px;
   background-image: url(../img/denis_novik.jpg);
@@ -159,6 +115,52 @@ body {
   background-position: center bottom;
   background-position-y: bottom;
   background-size: 960px;
+}
+
+.nav__menu {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+.nav__menu__link {
+  font-size: 18px;
+  line-height: 22px;
+  color: #828282;
+}
+.nav__menu__link:hover {
+  color: #070707;
+}
+.nav__right_place {
+  display: none;
+}
+
+.close {
+  align-self: end;
+}
+
+.vertical_text {
+  transform: rotate(-90deg) translateY(30px);
+}
+
+.lang {
+  display: inline;
+  font-size: 16px;
+  line-height: 20px;
+  color: #828282;
+}
+
+.black_lang {
+  color: #000000;
+}
+
+.burger {
+  display: none;
+  width: 33px;
+  height: 19.19px;
+}
+.burger__line {
+  height: 3.84px;
+  background-color: #000000;
 }
 
 .content {
@@ -260,25 +262,8 @@ body {
 
 @media (max-width: 667px) {
   .container {
+    max-width: 667px;
     padding: 0 29px;
-  }
-  .nav {
-    display: flex;
-  }
-  .nav__menu {
-    flex-direction: column;
-  }
-  .nav__menu__item {
-    margin-bottom: 68px;
-  }
-  .nav__menu__link {
-    font-size: 34px;
-    line-height: 42px;
-  }
-  .nav__right_place {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
   }
   .header {
     padding-top: 65px;
@@ -303,18 +288,48 @@ body {
   .header__welcome__person__info {
     text-align: left;
   }
-  .header .vertical_text {
-    display: none;
-  }
-  .header .burger {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
   .header__photo {
     background-image: url(../img/denis_novik_mini.jpg);
     background-size: 100%;
     background-position: center top;
+  }
+  .nav {
+    height: 812px;
+    display: flex;
+    position: absolute;
+    transform: translateY(-812px);
+    background-color: #ffffff;
+  }
+  .nav__menu {
+    justify-content: start;
+    flex-direction: column;
+  }
+  .nav__menu__item {
+    margin-bottom: 68px;
+  }
+  .nav__menu__link {
+    font-size: 34px;
+    line-height: 42px;
+  }
+  .nav__right_place {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .nav__right_place .vertical_text {
+    transform: rotate(90deg) translate(-62px, -72px);
+  }
+  .lang {
+    font-size: 34px;
+    line-height: 42px;
+  }
+  .header__welcome__person .vertical_text {
+    display: none;
+  }
+  .burger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
   .about {
     padding-top: 91px;

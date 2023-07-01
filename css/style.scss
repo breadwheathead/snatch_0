@@ -87,35 +87,6 @@ body {
 }
 
 // HEADER
-.nav {
-    &__menu {
-        display: flex;
-        justify-content: space-between;
-        flex-grow: 1;
-        // position: absolute;
-
-        &__link {
-            font-size: 18px;
-            line-height: 22px;
-            color: #828282;
-        }
-
-        &__link:hover {
-            color: #070707;
-        }
-    }
-
-    &__right_place {
-        display: none;
-    }
-}
-
-.close {
-    width: 20px;
-    height: 20px;
-    background-color: yellow;
-}
-
 .header {
     margin-bottom: 104px;
     padding-top: 32px;
@@ -150,32 +121,6 @@ body {
         }
     }
 
-    .vertical_text {
-        transform: rotate(-90deg) translateY(30px);
-    }
-
-    .lang {
-        display: inline;
-        font-size: 16px;
-        line-height: 20px;
-        color: #828282;
-    }
-
-    .lang:hover {
-        color: #070707;
-    }
-
-    .burger {
-        display: none;
-        width: 33px;
-        height: 19.19px;
-
-        &__line {
-            height: 3.84px;
-            background-color: #000000;
-        }
-    }
-
     &__photo {
         height: 392px;
 
@@ -184,6 +129,59 @@ body {
         background-position: center bottom;
         background-position-y: bottom;
         background-size: 960px;
+    }
+}
+
+.nav {
+    &__menu {
+        display: flex;
+        justify-content: space-between;
+        flex-grow: 1;
+        // position: absolute;
+
+        &__link {
+            font-size: 18px;
+            line-height: 22px;
+            color: #828282;
+        }
+
+        &__link:hover {
+            color: #070707;
+        }
+    }
+
+    &__right_place {
+        display: none;
+    }
+}
+
+.close {    
+    align-self: end;   
+}
+
+.vertical_text {
+    transform: rotate(-90deg) translateY(30px);
+}
+
+.lang {
+    display: inline;
+    font-size: 16px;
+    line-height: 20px;
+    color: #828282;
+}
+
+.black_lang {
+    color: #000000;
+}
+
+.burger {
+    display: none;
+    width: 33px;
+    height: 19.19px;
+
+    &__line {
+        height: 3.84px;
+        background-color: #000000;
     }
 }
 
@@ -304,33 +302,11 @@ body {
 
 @media (max-width: 667px) {
     .container {
+        max-width: 667px;
         padding: 0 29px;
     }
 
-    // HEADER
-    .nav {
-        display: flex;
-
-        &__menu {
-            flex-direction: column;
-
-            &__item {
-                margin-bottom: 68px;
-            }
-
-            &__link {
-                font-size: 34px;
-                line-height: 42px;
-            }
-        }
-
-        &__right_place {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-    }
-
+    // HEADER 
     .header {
         padding-top: 65px;
         margin-bottom: 83px;
@@ -360,21 +336,58 @@ body {
             }
         }
 
-        .vertical_text {
-            display: none;
-        }
-
-        .burger {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-
         &__photo {
             background-image: url(../img/denis_novik_mini.jpg);
             background-size: 100%;
             background-position: center top;
         }
+    }
+
+    .nav {        
+        height: 812px;
+        display: flex;
+        position: absolute;
+        transform: translateY(-812px);
+        background-color: #ffffff;
+
+        &__menu {
+            justify-content: start;
+            flex-direction: column;
+
+            &__item {
+                margin-bottom: 68px;
+            }
+
+            &__link {
+                font-size: 34px;
+                line-height: 42px;
+            }
+        }
+
+        &__right_place {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    }
+
+    .nav__right_place .vertical_text {
+        transform: rotate(90deg) translate(-62px, -72px);
+    }
+
+    .lang {
+        font-size: 34px;
+        line-height: 42px;
+    }
+
+    .header__welcome__person .vertical_text {
+        display: none;
+    }
+
+    .burger {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 
     // CONTENT
